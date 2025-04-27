@@ -1,3 +1,7 @@
 name = "simple-proxy4"
 main = ".output/server/index.mjs"
-compatibility_date = "2022-09-14"
+compatibility_date = "2021-09-14"
+
+# --- ADD THESE LINES FOR NODE.JS COMPATIBILITY ---
+compatibility_flags = [ "nodejs_compat" ]
+node_compat = true
