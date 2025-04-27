@@ -1,11 +1,16 @@
-# Should have your worker name here
+# Name of your Worker (usually matches your project name)
 name = "simple-proxy4"
-# Should have the entry point for your worker code
-main = "src/index.js" # <--- CHANGE THIS if your main file is different (e.g., build/worker.js, dist/index.js)
 
+# --- Nitro Default Worker Entry Point ---
+# This is where `nitropack build` usually puts the server/worker script.
+main = ".output/server/index.mjs"
+
+# Keep the compatibility settings you already had
 compatibility_date = "2021-09-14"
 compatibility_flags = [ "formdata_parser_supports_files" ]
 
-# ADD THIS SECTION HEADER and move the directory line under it
+# --- Configuration for Static Assets built by Nitro ---
 [site]
-bucket = "./dist" # <-- Use 'bucket' here. Make sure "./dist" is your actual build output folder.
+# --- Nitro Default Static Asset Folder ---
+# This is where `nitropack build` usually puts static files.
+bucket = ".output/public"
