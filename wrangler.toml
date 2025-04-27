@@ -2,3 +2,11 @@
 compatibility_date = "2021-09-14"
 # Also opt into an upcoming fix to the FormData API.
 compatibility_flags = [ "formdata_parser_supports_files" ]
+44.071	  
+	  ```
+	  name = "simple-proxy4"
+	  
+	  [assets]
+directory = "./dist"
+	  
+```
