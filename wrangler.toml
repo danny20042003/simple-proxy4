@@ -1,4 +1,13 @@
-name = "simple-proxy2"
-main = "./.output/server/index.mjs"
-workers_dev = true
-compatibility_date = "2022-09-10"
+# Name of your Worker
+name = "simple-proxy4"
+
+# --- Nitro Default Worker Entry Point ---
+# Points to the server script built by Nitro.
+main = ".output/server/index.mjs"
+
+# --- Compatibility Settings ---
+# Keep the compatibility settings you already had.
+compatibility_date = "2022-09-14"
+compatibility_flags = [ "formdata_parser_supports_files" ]
+
+# NO [site] section needed because nitro.config.ts has noPublicDir: true
