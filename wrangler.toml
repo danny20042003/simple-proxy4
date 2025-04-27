@@ -1,6 +1,11 @@
-# Opt into backwards-incompatible changes through September 14, 2021.
+# Should have your worker name here
+name = "simple-proxy4"
+# Should have the entry point for your worker code
+main = "src/index.js" # <--- CHANGE THIS if your main file is different (e.g., build/worker.js, dist/index.js)
+
 compatibility_date = "2021-09-14"
-# Also opt into an upcoming fix to the FormData API.
 compatibility_flags = [ "formdata_parser_supports_files" ]
-[assets]
-directory = "./dist"
+
+# ADD THIS SECTION HEADER and move the directory line under it
+[site]
+bucket = "./dist" # <-- Use 'bucket' here. Make sure "./dist" is your actual build output folder.
