@@ -1,16 +1,4 @@
-# Name of your Worker (usually matches your project name)
-name = "simple-proxy4"
-
-# --- Nitro Default Worker Entry Point ---
-# This is where `nitropack build` usually puts the server/worker script.
-main = ".output/server/index.mjs"
-
-# Keep the compatibility settings you already had
-compatibility_date = "2021-09-14"
-compatibility_flags = [ "formdata_parser_supports_files" ]
-
-# --- Configuration for Static Assets built by Nitro ---
-[site]
-# --- Nitro Default Static Asset Folder ---
-# This is where `nitropack build` usually puts static files.
-bucket = ".output/public"
+name = "simple-proxy2"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2022-09-10"
